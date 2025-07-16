@@ -62,10 +62,11 @@ html {
 .card2 {
   width: 35em;
   height: 22em;
-  margin: 5em auto;         /* Same margin as .card for spacing */
-  background-color: red;
+  margin: 5em auto;        
+  background-color: blue;
   border: 0.2em solid black;
   border-radius: 1.5em;
+  font-family: 'Georgia', serif;
 }
 
 .card2 header {
@@ -97,7 +98,7 @@ html {
   line-height: 3em;
 }
 
-.card2 footer p {
+.card2 footer p {  
   font-size: 1.5em;
   line-height: 3em;
 }
