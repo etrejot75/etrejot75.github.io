@@ -19,11 +19,12 @@ html {
   border-radius: 1.5em;
 }
 
-.card article img {
-  max-height: 100%;
-  float: right; 
+.card header {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+  padding: 1em;
+  height: 5em; 
 }
-
 
 .card footer {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
@@ -32,17 +33,14 @@ html {
   height: 5em; 
 }
 
-.card header {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));
-  border-radius: 1.5em 1.5em 0 0;
-  padding: 1em;
-  height: 5em; 
-}
-
-
 .card article {
   height: 12em;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card article img {
+  max-height: 100%;
+  float: right; 
 }
 
 .card h2, .card p {
@@ -63,3 +61,8 @@ html {
   padding: 1em;
   color: #eee;
 }
+
+
+
+
+
