@@ -5,48 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style> 
-        .fbox {
-            border: 5px solid black; 
-            background-color: lightblue; 
-            height: 100px;
-            width: auto; 
-            display: flex; 
-            flex-direction: row; 
+        div {
+            height: 250px; 
+            width: 250px; 
+            background-color: red; 
         }
 
-        .fchild { 
-            border: 5px solid black; 
-            background: lightcoral; 
-            height: 90px; 
-            width: 500px;
+        @media screen and (max-width: 1000px){ 
+            div { 
+                background-color: green;
+            }
         }
 
-        #first {
-            order: 2;
-            flex-grow: 2;
+        @media screen and (min-width: 1500px){ 
+            dic{ 
+                background-color: blue;
+            }
         }
-
-        #second {
-            order: 1;
-            flex-grow: 1; 
-        }
-
-        #third {
-            order: 4; 
-            flex-grow: 1; 
-        }
-
-        #fourth {
-            order: 3; 
-        }
-    </style> 
+    </style>
 </head>
 <body>
-    <div class= "fbox"> 
-        <div class="fchild" id="First"></div>
-        <div class="fchild" id="Second"></div>
-        <div class="fchild" id="Third"></div>
-        <div class="fchild" id="Fourth"></div>
-    </div>
+    
 </body>
 </html>
