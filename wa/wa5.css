@@ -25,13 +25,13 @@ body, html {
 
 .score {
   top: 15px;
-  left: 500px;
+  left: 250px;
   height: 400px;
-  width: 600px; 
+  width: 200px; 
 }
 
 .logo {
   top: 20px;
-  right: 500px;
-  width: 600px;
+  right: 250px;
+  width: 200px;
 }
