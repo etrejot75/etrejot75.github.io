@@ -1,62 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
 
-    * {
-    box-sizing: border-box;
-    }
+.background {
+  background-image: url("mexico-vs-usa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
 
-    html {
-    font-family: sans-serif;
-    }
+.overlay {
+  position: absolute;
+}
 
-    body {
-    margin: 0;
-    background: #ccc;
-    }
+.score {
+  top: 20px;
+  left: 20px;
+  width: 150px; /* adjust as needed */
+}
 
-    article {
-    background:
-    url(mexico-vs-usa-overlay-score-removebg-preview.png) no-repeat left top, 
-    url(CONCACAF-Gold-Cup.png) no-repeat right top;
-    width: 210mm;
-    height: 297mm;
-    margin: 20px auto;
-    position: middle;
-    }
+.logo {
+  top: 20px;
+  right: 20px;
+  width: 100px;
+}
 
-    address {
-    position: absolute;
-    bottom: 8mm;
-    right: 20mm;
-    }
-
-    h1 {
-    position: absolute;
-    top: 12mm;
-    left: 20mm;
-    width: 128px;
-    height: 128px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: 44px 0;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    background: url(logo.png);
-    }
-
-    body, html {
-    height: 100%;
-    }
-
-    .bg {
-    /* The image used */
-    background-image: url("img_girl.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
+.timer {
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
