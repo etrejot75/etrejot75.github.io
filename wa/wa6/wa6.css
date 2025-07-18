@@ -61,7 +61,6 @@ nav a {
   margin-bottom: 10px;
 }
 
-/* Desktop layout for screen sizes 500px and up */
 @media (min-width: 500px) {
   main.grid {
     display: flex;
@@ -73,7 +72,6 @@ nav a {
   }
 }
 
-/* Mobile layout for screens smaller than 500px */
 @media (max-width: 499px) {
   nav ul {
     flex-direction: column;
