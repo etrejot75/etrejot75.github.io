@@ -26,12 +26,12 @@ body, html {
 .score {
   top: 15px;
   left: 500px;
-  height: 200px;
-  width: 800px; 
+  height: 400px;
+  width: 1600px; 
 }
 
 .logo {
   top: 20px;
   right: 500px;
-  width: 600px;
+  width: 1200px;
 }
