@@ -29,6 +29,7 @@ body {
     background-color: #000;
     padding: .5em;
     position: sticky;
+    top: 0;
   }
   
   nav ul{
@@ -43,13 +44,13 @@ body {
   nav a {
     color: #fff;
     text-decoration: none;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
   
   .photos {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 20;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
@@ -58,14 +59,13 @@ body {
   .feature {
     width: 200px;
     float: left;
-    margin: 0 30px 30px 0;
+    margin: 0 10px 50px 0;
   }
 
   .grid article {
-    flex: 2 1 50%;
+    flex: 2 1 2%;
   }
 
   .grid aside {
-    flex: 1 1 20%;
-    float: right; 
+    flex: 1 5%;
   }
