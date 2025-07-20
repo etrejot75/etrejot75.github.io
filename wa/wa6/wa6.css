@@ -49,8 +49,8 @@ body {
   
   .photos {
     list-style: none;
-    margin: 10;
-    padding: 20;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
