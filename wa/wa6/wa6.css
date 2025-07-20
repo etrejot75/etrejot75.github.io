@@ -1,79 +1,73 @@
-/* Base styles */
 body {
-  background-color: #fff;
-  color: #333;
-  margin: 0;
-  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-}
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
 
-img {
-  max-width: 100%;
-  display: block;
-}
+  img {
+      max-width: 100%;
+      display: block;
+  }
 
-/* Logo */
-.logo {
-  font-size: 200%;
-  padding: 50px 20px;
-  margin: 0 auto;
-  max-width: 980px;
-}
+  .logo {
+    font-size: 200%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+  }
 
-/* Navigation */
-nav {
-  background-color: #000000;
-  padding: 0.5em;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  max-width: 900px;
-}
+  nav {
+      background-color: #000000;
+      padding: 0.5em;
+      position: sticky;
+  }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5em 1em;
-  display: block;
-}
+  nav ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      max-width: 900px;
+  }
 
+  nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: .5em 1em;
+  }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 auto;
-  max-width: 980px;
-}
+  .grid article {
+    flex: 2 1 50%;
+  }
 
-.grid article {
-  flex: 2 1 50%;
-}
+  .grid aside {
+    flex: 1 1 15%;
+  }
 
-.grid aside {
-  flex: 1 1 15%;
-}
+  .feature {
+      float: left;
+      margin: 0 30px 30px 0;
+      width: 200px;
+  }
 
-.photos {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-}
-
-.feature {
-  float: left;
-  margin: 0 30px 30px 0;
-  width: 200px;
-}
+  .photos {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+  }
 
 
