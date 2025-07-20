@@ -21,6 +21,8 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: flex; 
+    flex-wrap: wrap;
   }
   
   nav {
@@ -29,14 +31,14 @@ body {
     position: sticky;
   }
   
-  nav ul {
-    margin: 0;
+  nav ul{
+    margin:  0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    max-width: 900px;
-  }
+    max-width: 1500px;
+  } 
   
   nav a {
     color: #fff;
@@ -64,5 +66,6 @@ body {
   }
 
   .grid aside {
-    flex: 1 1 15%;
+    flex: 1 1 20%;
+    float: right; 
   }
