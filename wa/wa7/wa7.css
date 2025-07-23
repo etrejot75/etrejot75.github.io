@@ -1,0 +1,159 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #004d98;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #edbb00;
+}
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: #a50044;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:	#edbb00;
+}
+
+
+img{
+    width:30vw;
+    height: 30vh;
+    transition: 
+        width 2s, 
+        height 2s, 
+        background-color 2s,
+}
+
+img:hover{ 
+    width: 60vw; 
+    height: 60vh;
+}
+
+#red-ball{
+    background-color: #a50044;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    position: absolute;
+    left:1vw;
+    top:0;
+    animation: redballmove 5s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes redballmove{
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        top: 0;
+        left: 1400px;
+    }
+    
+    50% { 
+        top: 750px;
+        left: 1400px;
+    } 
+
+    75% { 
+        top: 740px;
+        left: 0; 
+
+    }
+
+    100%{
+        top:0; 
+        left: 0;
+    }
+}
+
+#yellow-ball{
+    background-color: #edbb00;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    position: absolute;
+    left:4vw;
+    top:0;
+    animation: yellowballmove 5s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes yellowballmove{
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        top: 0;
+        left: 1300px;
+    }
+    
+    50% { 
+        top: 650px;
+        left: 1300px;
+    } 
+
+    75% { 
+        top: 650px;
+        left: 0; 
+
+    }
+
+    100%{
+        top:0; 
+        left: 0;
+    }
+}
+
+
+#red-ball2{
+    background-color: #a50044;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    position: absolute;
+    left:7vw;
+    top:0;
+    animation: redball2move 5s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes redball2move{
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        top: 0;
+        left: 1200px;
+    }
+    
+    50% { 
+        top: 550px;
+        left: 1200px;
+    } 
+
+    75% { 
+        top: 550px;
+        left: 0; 
+
+    }
+
+    100%{
+        top:0; 
+        left: 0;
+    }
+}
+
