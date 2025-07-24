@@ -10,7 +10,6 @@ nav{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    height:20px;
     background-color: #4c7273;
     position: sticky;
     top: 0; 
