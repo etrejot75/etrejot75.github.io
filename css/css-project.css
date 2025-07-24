@@ -1,9 +1,14 @@
 body{ 
-    padding: 3vw;
     background-color: #eef3f9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #042630;
 
+}
+
+body h3,hr,p{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    
 }
 
 nav{
@@ -19,7 +24,7 @@ nav a {
     width:10vw;
     text-align: center;
     text-decoration: none;
-    color:	#d0d6d6;
+    color:#d0d6d6;
     transition: color 0.5s ease;
     font-size: larger;
 }
