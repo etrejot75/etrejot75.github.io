@@ -135,6 +135,7 @@ nav a:hover{
         list-style: none;
         display:flex;
         justify-content: space-between;
+        font-size: small;
     }
 
     nav ul {
