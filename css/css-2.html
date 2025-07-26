@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochestra Website</title>
+    <link rel="stylesheet" href="css-project.css">
+    <style>
+        .concerts-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 5vw;
+        }
+
+        .concert-card {
+            flex: 1 1 calc(20% - 20px);
+            max-width: 200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .concert-card:hover {
+            transform: scale(1.05);
+        }
+
+        .concert-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .concert-card h3 {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .concert-card p {
+            font-size: 0.9rem;
+            margin: 4px 0;
+        }
+
+        .concert-card span {
+            font-weight: bold;
+            color: #1a3e59;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> ZΩRBLAXian VOID PULSE COLLECTIVE </h1>
+    <h2> Concert Descriptions Compilation </h2>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Concerts</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="concerts-grid">
+        <div class="concert-card">
+            <img src="concert-1.jpeg" alt="Concert 1">
+            <h3><span>CONCERT 1:</span> COSMIC SENSORY CONVERGENCE</h3>
+            <p><span>Stardate:</span> 2025.108-109 | <span>Time:</span> 22:00</p>
+            <p><span>Conductor:</span> ZEROX-9</p>
+            <p><span>Venue:</span> The Crystal Nebula</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-2.jpeg" alt="Concert 2">
+            <h3><span>CONCERT 2:</span> QUANTUM RESONANCE EXPLORATION</h3>
+            <p><span>Stardate:</span> 2025.142-143 | <span>Time:</span> 21:00</p>
+            <p><span>Conductor:</span> K'THX-7</p>
+            <p><span>Venue:</span> Antimatter Amphitheater</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-3.jpeg" alt="Concert 3">
+            <h3><span>CONCERT 3:</span> INTERSPECIES HARMONIZATION</h3>
+            <p><span>Stardate:</span> 2025.173-174 | <span>Time:</span> 19:30</p>
+            <p><span>Conductor:</span> BZZT-Ω</p>
+            <p><span>Venue:</span> Xenobiological Soundsphere</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-4.jpeg" alt="Concert 4">
+            <h3><span>CONCERT 4:</span> TEMPORAL PARADOX PERFORMANCE</h3>
+            <p><span>Stardate:</span> 2025.211-212 | <span>Time:</span> Fluctuating</p>
+            <p><span>Conductor:</span> AEON-∞</p>
+            <p><span>Venue:</span> Möbius Concert Hall</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-5.jpeg" alt="Concert 5">
+            <h3><span>CONCERT 5:</span> SUBATOMIC SOUND EXPLORATION</h3>
+            <p><span>Stardate:</span> 2025.247-248 | <span>Time:</span> 20:30</p>
+            <p><span>Conductor:</span> HIGGS-β</p>
+            <p><span>Venue:</span> Subatomic Sound Chamber</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-6.jpeg" alt="Concert 6">
+            <h3><span>CONCERT 6:</span> PSYCHONAUTIC JOURNEY</h3>
+            <p><span>Stardate:</span> 2025.284-285 | <span>Time:</span> 23:00</p>
+            <p><span>Conductor:</span> SYNAPSE-δ</p>
+            <p><span>Venue:</span> Psychic Resonance Arena</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-7.jpeg" alt="Concert 7">
+            <h3><span>CONCERT 7:</span> MULTISENSORY SYNTHESIS</h3>
+            <p><span>Stardate:</span> 2025.319-320 | <span>Time:</span> 20:00</p>
+            <p><span>Conductor:</span> CHROMA-Ψ</p>
+            <p><span>Venue:</span> Synaesthetic Sphere</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-8.jpeg" alt="Concert 8">
+            <h3><span>CONCERT 8:</span> GRAVITATIONAL WAVE PERCUSSION</h3>
+            <p><span>Stardate:</span> 2025.352-353 | <span>Time:</span> 21:30</p>
+            <p><span>Conductor:</span> LIGO-Z</p>
+            <p><span>Venue:</span> Gravitational Amphitheater</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-9.jpeg" alt="Concert 9">
+            <h3><span>CONCERT 9:</span> DIMENSIONAL TRANSMIGRATION</h3>
+            <p><span>Stardate:</span> 2025.029-030 | <span>Time:</span> 00:00</p>
+            <p><span>Conductor:</span> NULL-Ø</p>
+            <p><span>Venue:</span> Liminal Concert Void</p>
+        </div>
+        <div class="concert-card">
+            <img src="concert-10.jpeg" alt="Concert 10">
+            <h3><span>CONCERT 10:</span> UNIVERSAL ENTROPY REVERSAL</h3>
+            <p><span>Stardate:</span> 2026.001-002 | <span>Time:</span> 23:59</p>
+            <p><span>Conductor:</span> ENTROPY-α</p>
+            <p><span>Venue:</span> Thermodynamic Null Zone</p>
+        </div>
+    </div>
+
+</body>
+</html>

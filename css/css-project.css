@@ -1,34 +1,106 @@
 body{ 
+    margin: 0;
     background-color: #eef3f9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #042630;
-
+    color: #111111;
 }
 
-body h3,hr,p{
-    padding-left: 5vw;
+h3,p{
+    margin-bottom: 0;
+    padding-left: 2vw;
     padding-right: 5vw;
-    
+       
 }
 
-nav{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #4c7273;
+h1, h2{ 
+    text-align: left;
+    margin-left: 150px;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px; /* makes the navbar thicker */
     position: sticky;
     top: 0; 
+    z-index: 2;
+    border-radius: 4px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    margin-top: 0;
+    padding:0;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
 }
 
 nav a {
+    margin: 0;
     width:10vw;
     text-align: center;
-    text-decoration: none;
     color:#d0d6d6;
     transition: color 0.5s ease;
     font-size: larger;
+    max-width: 1500px;
 }
 
 nav a:hover{ 
     color: #041421;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    height: 130px; /* adjust size as needed */
+    width: auto;
+}
+
+.concerts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(5, auto); 
+    gap: 10px;
+    padding: 40px;
+}
+
+.concert-card {
+    border: 1px solid #042630;
+    border-radius: 15px;
+    text-align: wrap;
+    background-color: #111;
+    color: #f0f0f0;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.concert-card:hover{
+    transform: scale(1.01);
+    z-index: 1;
+}
+
+.concert-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #666;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
