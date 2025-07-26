@@ -79,7 +79,7 @@ nav a:hover{
 .concert-card {
     border: 1px solid #042630;
     border-radius: 15px;
-    text-align: wrap;
+    /*text-align: wrap;*/
     background-color: #111;
     color: #f0f0f0;
     padding: 10px;
@@ -105,21 +105,19 @@ nav a:hover{
     }
 
     .logo {
-        position: static;
-        display: flex;
-        justify-content: left;
+        position: relative;
         margin-bottom: 10px;
     }
 
     .logo img {
         height: 100px;
         margin-left: 5px; 
-        margin: 15px;
+        /*margin: 15px;*/
 
     }
 
     h1, h2 {
-        margin-left: 15px;
+        margin-left: 40px;
         text-align: left;
     }
 
