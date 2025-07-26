@@ -20,7 +20,7 @@ h1, h2{
 
 nav {
     background-color: #222;
-    padding: 10px; /* makes the navbar thicker */
+    padding: 10px; 
     position: sticky;
     top: 0; 
     z-index: 2;
@@ -65,7 +65,7 @@ nav a:hover{
 }
 
 .logo img {
-    height: 130px; /* adjust size as needed */
+    height: 130px; 
     width: auto;
 }
 
@@ -98,40 +98,56 @@ nav a:hover{
     border-bottom: 1px solid #666;
 }
 
-@media screen and (max-width: 600px) {
-  .concerts-grid {
-    grid-template-columns: 1fr; /* one column */
-    padding: 10px;
-    gap: 20px;
-  }
+@media screen and (max-width: 800px) {
+    .concerts-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 20px;
+    }
 
-  .logo {
-    position: static;
-    display: flex;
-    justify-content: left;
-    margin-bottom: 10px;
-  }
+    .logo {
+        position: static;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 10px;
+    }
 
-  .logo img {
-    height: 70px;
-  }
+    .logo img {
+        height: 70px;
+    }
 
-  h1, h2 {
-    margin-left: 0;
-    text-align: left;
-  }
+    h1, h2 {
+        margin-left: 0;
+        text-align: left;
+    }
 
-  nav ul {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-  .concert-card {
-    padding: 10px;
-  }
+    nav ul li a{
+        margin-top: 0;
+        padding:0;
+        list-style: none;
+        display:flex;
+        justify-content: space-between;
+    }
 
-  .concert-card img {
-    width: 100%;
-    height: auto;
-  }
-}
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .concert-card {
+        margin: 20px;
+    }
+
+    .concert-card img {
+        width: 100%;
+        height: auto;
+    }
+    }
