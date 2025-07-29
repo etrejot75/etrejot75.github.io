@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .circle { 
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: relative; 
+            left: 0;
+            top: 0;
+            transition: left 2s ease, top 2s ease;
+        }
+
+        .moved {
+            left: 500px; 
+            top: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class= "circle"></div>
+
+    <script>
+
+        const circle = document.querySelector(".circle");
+
+        circle.addEventListener('click', () => { 
+            circle.classList.toggle("moved");
+        }) 
+
+        circle.addEventListener('click', () => {
+        const name = prompt("Give the circle a name:");
+        if (name) {
+            circle.textContent = name;
+            circle.style.display = 'flex';
+            circle.style.alignItems = 'center';
+            circle.style.justifyContent = 'center';
+            circle.style.fontSize = 'auto';
+        }
+        });
+
+    </script>
+
+</body>
+</html>
