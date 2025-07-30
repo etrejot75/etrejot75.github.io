@@ -7,13 +7,13 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+let storyText = 'It was 102 degrees outside, so :insertx: put on sunglasses and left the house. When they arrived at :inserty:, they gasped dramatically, then :insertz:. Bob watched in disbelief — :insertx: had eaten three burritos for breakfast, and the heat was unbearable.';
 
-var insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
+var insertX = ['Professor Pickle', 'Mega Grandma', 'Captain Marshmallow'];
 
-var insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
+var insertY = ['Area 51', 'a haunted bowling alley', 'the Moonbase gift shop'];
 
-var insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away']
+var insertZ = ['started tap dancing uncontrollably', 'vanished into a cloud of glitter', 'screamed and rode off on a giant hamster'];
 
 randomize.addEventListener('click', result);
 
