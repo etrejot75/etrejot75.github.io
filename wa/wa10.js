@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = 'It was 102 degrees outside, so :insertx: put on sunglasses and left the house. When they arrived at :inserty:, they gasped dramatically, then :insertz:. Bob watched in disbelief — :insertx: had eaten three burritos for breakfast, and the heat was unbearable.';
+let storyText = 'It was 102 fahrenheit outside, so :insertx: put on sunglasses and left the house. When they arrived at :inserty:, they gasped dramatically, then :insertz:. Bob watched in disbelief — :insertx: weighed 300 pounds, and the heat was unbearable.';
 
 var insertX = ['Professor Pickle', 'Mega Grandma', 'Captain Marshmallow'];
 
@@ -39,7 +39,7 @@ function result() {
     const weight = Math.round(300 * 0.0714) + ' stone';
     const temperature =  Math.round((94-32) * 5/9) + ' centigrade';
 
-    newStory = newStory.replace("94 fahrenheit", temperature); 
+    newStory = newStory.replace("102 fahrenheit", temperature); 
     newStory = newStory.replace("300 pounds", weight); 
 
     }
