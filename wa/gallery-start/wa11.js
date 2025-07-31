@@ -11,7 +11,7 @@ const alternativeText = {
     "pic2.jpg": "Trailers driving down street",
     "pic3.jpg": "Green Northern Lights",
     "pic4.jpg": "Beach sunset with plam trees",
-    "pic5.jpg": "Abstract castle on hill scene"
+    "pic5.jpg": "Abstract castle on hill"
 };
 
 for (const fileName of images) {
