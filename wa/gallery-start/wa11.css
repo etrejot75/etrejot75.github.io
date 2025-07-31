@@ -26,9 +26,9 @@ body {
 
 button {
   border: 0;
-  background: rgba(150,150,150,0.6);
-  text-shadow: 1px 1px 1px white;
-  border: 1px solid #999;
+  background: rgba(119, 3, 3, 0.6);
+  text-shadow: 1px 1px 1px rgb(147, 147, 147);
+  border: 1px solid #303030;
   position: absolute;
   cursor: pointer;
   top: 2px;
@@ -40,4 +40,8 @@ button {
   width: 20%;
   float: left;
   cursor: pointer;
+}
+
+body{ 
+  background-color: rgb(255, 174, 137);
 }
