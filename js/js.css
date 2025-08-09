@@ -37,7 +37,7 @@ body {
   left: -5px;
   width: 50px;
   height: 20px;
-  background-color: #505050;
+  background-color: #656565;
   border-radius: 2px;
   cursor: grab;
   user-select: none;
@@ -51,15 +51,39 @@ body {
   user-select: none;
 }
 
-#phone-number-save {
-  margin-top: 65px;
+#phone-number-saver {
+  margin-top: 30px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 5px;
+  height: 30px;
+  width: auto;
+  text-size-adjust: auto ;
 }
 
 #saved-phone-notification {
-  margin-top: 30px;
+  margin-top: 20px;
   font-weight: bold;
   font-size: 35px;
   color: #202020;
+}
+
+#reset-scrollers { 
+  font-size: 15px;
+  cursor: pointer; 
+  padding: 8px; 
+  border: 2px;
+  background: #494949;
+  color: white;
+  border-radius: 5px; 
+  margin-top: 10px;
+}
+
+#reset-scrollers:hover{ 
+  background: #2c2c2c;
+}
+
+#saved-phone-notification.show { 
+  opacity: 1; 
+  overflow: visible;
 }

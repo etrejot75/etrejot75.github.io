@@ -55,9 +55,12 @@ buttons.forEach((button, index) => {
 
         buttonPositions[activeButtonIndex] = newPosition;
 
-        const linked = linkedScrollers[activeButtonIndex] || [];
+        const linked = linkedScrollers
+        [activeButtonIndex] || [];
+        const proportion = 0.1; 
         linked.forEach((linkedIndex) => {
-            const adjusted = scrollerPairer(buttonPositions[linkedIndex] - dy * 0.5, 0, moveableHeight);
+            const linkedSpeed = dy * proportion * (currentMoveableHeight / moveableHeight);
+            const adjusted = scrollerPairer(buttonPositions[linkedIndex] - dy,0, moveableHeight);
             buttonPositions[linkedIndex] = adjusted;
         });
 
@@ -82,5 +85,20 @@ buttons.forEach((button, index) => {
         scroller.querySelector(".starting-number").textContent
     ).join("");
     notificationBox.textContent = `Your phone number is ${phoneDigits}`;
+    notificationBox.classList.add("show")
     });
+});
+
+const resetScrollers = document.getElementById("reset-scrollers");
+const notificationBox = document.getElementById("saved-phone-notification")
+resetScrollers.addEventListener("click", () => {
+    buttons.forEach((button, index) => {
+        buttonPositions[index] = moveableHeight;
+        button.style.top = `${moveableHeight}px`;
+        const display = scrollerRepositories[index].querySelector(".starting-number");
+        display.textContent = "0";
+    });
+
+    notificationBox.textContent = "";
+    notificationBox.classList.remove('show');
 });
